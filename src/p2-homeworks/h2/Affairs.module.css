@@ -1,0 +1,35 @@
+.affair {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.affair div{
+    width: calc(100%/3);
+}
+
+.button {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button button{
+    background: green;
+}
+.deleteButton{
+    background: red;
+}
+.lowOrange{
+    color: orange;
+}
+.highBlue{
+    color: blue;
+}
+.middlePurple{
+    color: purple;
+}
