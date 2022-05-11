@@ -1,7 +1,21 @@
-.someClass {
-
-}
 
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
+}
+.normal{
+    border: 2px solid black;
+    background-color: #61dafb;
+}
+
+.button{
+    background-color: #61dafb;
+    border: 2px solid #2a96b3;
+
+}
+.errorText{
+    color: red;
+    font-weight: bolder;
+}
+.totalUsers{
+    font-weight: bolder;
 }

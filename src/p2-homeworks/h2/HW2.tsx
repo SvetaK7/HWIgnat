@@ -6,7 +6,7 @@ export type AffairPriorityType = 'high' | 'low' | 'middle'; // need to fix any
 export type AffairType = {
     _id: number
     name: string
-    priority: string
+    priority: AffairPriorityType
 } // need to fix any
 export type FilterType = 'all' | AffairPriorityType
 type AffairsPropsType = Array<AffairType>
@@ -50,6 +50,7 @@ function HW2() {
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filter={filter}
             />
 
             <hr/>

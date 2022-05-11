@@ -33,3 +33,7 @@
 .middlePurple{
     color: purple;
 }
+.active{
+    color: rgba(47, 0, 128, 0.99);
+    font-weight: bolder;
+}

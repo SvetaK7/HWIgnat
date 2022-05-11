@@ -8,6 +8,7 @@ type AffairsPropsType = { // need to fix any
     data: any
     setFilter: React.Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -32,17 +33,23 @@ function Affairs(props: AffairsPropsType) {
     const setLow = (): void => {
         props.setFilter('low')
     };
-
+    //одна функция, добавить ее в button и value добавить(all,high...)
+    // const set = (e: React.MouseEvent<HTMLButtonElement>) => {
+    //     props.setFilter(e.currentTarget.value as FilterType)
+    // }
+    const setClass = (filter: FilterType) => {
+        return (props.filter === filter ? s.active : '')
+    }
     return (
         <div>
             {mappedAffairs}
 
 
             <div className={s.button}>
-                <button onClick={setAll}>All</button>
-                <button onClick={setHigh}>High</button>
-                <button onClick={setMiddle}>Middle</button>
-                <button onClick={setLow}>Low</button>
+                <button onClick={setAll} className={setClass('all')}>All</button>
+                <button onClick={setHigh} className={setClass('high')}>High</button>
+                <button onClick={setMiddle} className={setClass('middle')}>Middle</button>
+                <button onClick={setLow} className={setClass('low')}>Low</button>
             </div>
 
         </div>
