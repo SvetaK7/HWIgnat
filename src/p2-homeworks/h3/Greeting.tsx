@@ -5,7 +5,7 @@ type GreetingPropsType = {
     name: string // need to fix any
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
-    error: any // need to fix any
+    error: string // need to fix any
     totalUsers: number // need to fix any
 }
 
@@ -13,9 +13,9 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
-    const inputClass = name === '' ? s.error : s.normal // need to fix with (?:)
+    const inputClass = error ? s.error : s.normal // need to fix with (?:)
     const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter'){
+        if (name && e.key === 'Enter'){
             addUser();
         }
             }
