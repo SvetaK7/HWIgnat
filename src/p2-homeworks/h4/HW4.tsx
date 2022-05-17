@@ -31,6 +31,7 @@ function HW4() {
                     onEnter={showAlert}
                     error={error}
                     // spanClassName={s.testSpanError}
+                    className={s.purple}
                 />
 
                 <SuperInputText

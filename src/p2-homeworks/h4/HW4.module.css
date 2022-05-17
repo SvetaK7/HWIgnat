@@ -11,3 +11,7 @@
 .testSpanError {
     color: blue;
 }
+
+.purple{
+    border-bottom: 5px solid purple;
+}
