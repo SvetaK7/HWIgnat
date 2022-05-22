@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HWIgnat/static/css/main.376b0b60.css",
+    "main.js": "/HWIgnat/static/js/main.b5a2d4a6.js",
+    "index.html": "/HWIgnat/index.html",
+    "main.376b0b60.css.map": "/HWIgnat/static/css/main.376b0b60.css.map",
+    "main.b5a2d4a6.js.map": "/HWIgnat/static/js/main.b5a2d4a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.376b0b60.css",
+    "static/js/main.b5a2d4a6.js"
+  ]
+}
