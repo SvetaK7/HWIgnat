@@ -11,11 +11,13 @@
 .button{
     background-color: #61dafb;
     border: 2px solid #2a96b3;
+    margin: 5px;
 
 }
 .errorText{
     color: red;
     font-weight: bolder;
+    height: 20px;
 }
 .totalUsers{
     font-weight: bolder;

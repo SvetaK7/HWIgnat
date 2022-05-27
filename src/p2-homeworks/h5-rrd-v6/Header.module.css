@@ -1,0 +1,30 @@
+.links a{
+    display: none;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.act{
+    color: brown;
+}
+
+.def{
+    color: burlywood;
+}
+.navigateLinks{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.menuLinks{
+    width: 30px;
+    height: 30px;
+    border: 1px solid brown;
+    background-color: brown;
+}
+
+.menuLinksActive a {
+    display: inline-block;
+}

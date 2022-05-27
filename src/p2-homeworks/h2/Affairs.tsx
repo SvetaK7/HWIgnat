@@ -6,7 +6,7 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
 type AffairsPropsType = { // need to fix any
-    data: any
+    data: Array<AffairType>
     setFilter: React.Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
     filter: FilterType

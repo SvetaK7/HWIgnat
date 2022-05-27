@@ -9,7 +9,7 @@ export type AffairType = {
     priority: AffairPriorityType
 } // need to fix any
 export type FilterType = 'all' | AffairPriorityType
-type AffairsPropsType = Array<AffairType>
+export type AffairsPropsType = Array<AffairType>
 // constants
 const defaultAffairs: AffairsPropsType = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},

@@ -9,22 +9,19 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+    {name, setNameCallback, addUser, error, totalUsers, onEnter} // деструктуризация пропсов
 ) => {
     const inputClass = error ? s.error : s.normal // need to fix with (?:)
-    const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (name && e.key === 'Enter'){
-            addUser();
-        }
-            }
+
     return (
         <div>
             {/*<input onKeyDown={onKeyDown} value={name} onChange={setNameCallback} className={inputClass}/>*/}
-            <SuperInputText onKeyDown={onKeyDown} value={name} onChange={setNameCallback} className={inputClass}/>
+            <SuperInputText onKeyDown={onEnter} value={name} onChange={setNameCallback} className={inputClass}/>
             {/*<button onClick={addUser} disabled={name === ''} className={s.button}>add</button>*/}
             <SuperButton onClick={addUser} disabled={name === ''} className={s.button}>add</SuperButton>
             <span className={s.totalUsers}>{totalUsers}</span>
