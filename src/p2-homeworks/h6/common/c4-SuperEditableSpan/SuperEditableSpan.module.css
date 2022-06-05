@@ -1,0 +1,18 @@
+.editableSpan{
+    margin: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.editableSpan::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    background: url(../img/pencil.png) no-repeat;
+    background-size: cover;
+
+}
