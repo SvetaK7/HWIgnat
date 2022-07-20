@@ -1,5 +1,6 @@
 import React from 'react'
 import {homeWorkReducer} from '../homeWorkReducer'
+import exp from "constants";
 
 let initialState: any[] // need to fix any
 
@@ -32,5 +33,6 @@ test('check age 18', () => {
     console.log(newState)
 
     expect(newState[5]).toBe(undefined)
+    expect(newState.length).toBe(4);
 
 })
