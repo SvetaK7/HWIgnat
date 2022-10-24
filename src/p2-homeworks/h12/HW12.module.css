@@ -11,13 +11,21 @@
 }
 
 .red-text {
-    color: aqua;
+    color: #501e1e;
 }
 
-.some {
+.green {
     background: lightgreen;
 }
 
 .some-text {
     color: darkslateblue;
+}
+
+.blue{
+    background: #95dcef;
+}
+
+.blue-text{
+    color: #9315a1;
 }

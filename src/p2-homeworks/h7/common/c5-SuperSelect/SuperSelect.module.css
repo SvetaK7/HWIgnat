@@ -1,9 +1,10 @@
 .select{
+    margin: 2px;
     padding: 5px;
     width: 100px;
     color: yellow;
     background: #80a71c;
 }
 .option:checked{
-    background: green;
+    background: #343934;
 }
