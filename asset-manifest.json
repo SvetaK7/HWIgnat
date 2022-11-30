@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/HWIgnat/static/css/main.f74dbaa3.css",
-    "main.js": "/HWIgnat/static/js/main.d85ccea2.js",
+    "main.js": "/HWIgnat/static/js/main.1f693930.js",
     "static/media/preloader.svg": "/HWIgnat/static/media/preloader.fc9100d7e350e7e44601bfcfcae4eec5.svg",
     "index.html": "/HWIgnat/index.html",
     "main.f74dbaa3.css.map": "/HWIgnat/static/css/main.f74dbaa3.css.map",
-    "main.d85ccea2.js.map": "/HWIgnat/static/js/main.d85ccea2.js.map"
+    "main.1f693930.js.map": "/HWIgnat/static/js/main.1f693930.js.map"
   },
   "entrypoints": [
     "static/css/main.f74dbaa3.css",
-    "static/js/main.d85ccea2.js"
+    "static/js/main.1f693930.js"
   ]
 }
