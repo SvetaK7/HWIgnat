@@ -1,0 +1,19 @@
+.tech {
+    font-size: 16px;
+    font-weight: 400;
+}
+.sizeArea{
+    width: 468px;
+}
+
+.loading {
+    text-align: right;
+}
+
+.sizeInput{
+    width: 468px;
+    padding: 5px;
+}
+.sizeInput:focus{
+    border-color: #0066CC;
+}
