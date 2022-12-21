@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/HWIgnat/static/css/main.9b9fef79.css",
-    "main.js": "/HWIgnat/static/js/main.aaec2e2e.js",
+    "main.css": "/HWIgnat/static/css/main.1e530fc5.css",
+    "main.js": "/HWIgnat/static/js/main.20312c5c.js",
     "static/media/200.svg": "/HWIgnat/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
     "static/media/error.svg": "/HWIgnat/static/media/error.5a3135f381b00b53044eff200e725391.svg",
     "static/media/500.svg": "/HWIgnat/static/media/500.adbc5f265f6f3c1fb9c5633ffe365afa.svg",
     "static/media/400.svg": "/HWIgnat/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/preloader.svg": "/HWIgnat/static/media/preloader.fc9100d7e350e7e44601bfcfcae4eec5.svg",
     "index.html": "/HWIgnat/index.html",
-    "main.9b9fef79.css.map": "/HWIgnat/static/css/main.9b9fef79.css.map",
-    "main.aaec2e2e.js.map": "/HWIgnat/static/js/main.aaec2e2e.js.map"
+    "main.1e530fc5.css.map": "/HWIgnat/static/css/main.1e530fc5.css.map",
+    "main.20312c5c.js.map": "/HWIgnat/static/js/main.20312c5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b9fef79.css",
-    "static/js/main.aaec2e2e.js"
+    "static/css/main.1e530fc5.css",
+    "static/js/main.20312c5c.js"
   ]
 }
