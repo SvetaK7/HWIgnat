@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HWIgnat/static/css/main.b9e7ed4c.css",
-    "main.js": "/HWIgnat/static/js/main.f5bd01dc.js",
+    "main.css": "/HWIgnat/static/css/main.3bcec88b.css",
+    "main.js": "/HWIgnat/static/js/main.63c5f268.js",
     "static/media/avatar.png": "/HWIgnat/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/HWIgnat/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
     "static/media/error.svg": "/HWIgnat/static/media/error.5a3135f381b00b53044eff200e725391.svg",
@@ -9,11 +9,11 @@
     "static/media/400.svg": "/HWIgnat/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/preloader.svg": "/HWIgnat/static/media/preloader.fc9100d7e350e7e44601bfcfcae4eec5.svg",
     "index.html": "/HWIgnat/index.html",
-    "main.b9e7ed4c.css.map": "/HWIgnat/static/css/main.b9e7ed4c.css.map",
-    "main.f5bd01dc.js.map": "/HWIgnat/static/js/main.f5bd01dc.js.map"
+    "main.3bcec88b.css.map": "/HWIgnat/static/css/main.3bcec88b.css.map",
+    "main.63c5f268.js.map": "/HWIgnat/static/js/main.63c5f268.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9e7ed4c.css",
-    "static/js/main.f5bd01dc.js"
+    "static/css/main.3bcec88b.css",
+    "static/js/main.63c5f268.js"
   ]
 }
