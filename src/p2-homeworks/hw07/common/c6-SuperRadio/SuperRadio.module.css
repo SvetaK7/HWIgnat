@@ -1,0 +1,25 @@
+.radio {
+    width: 20px;
+    height: 20px;
+}
+
+.radio::before {
+    /*content: "";*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*border: 1px solid;*/
+    /*display: inline-block;*/
+
+}
+
+
+.radio:checked::before {
+}
+
+.label {
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
