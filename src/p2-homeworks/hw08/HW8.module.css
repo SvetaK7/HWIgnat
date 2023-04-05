@@ -1,0 +1,43 @@
+.item {
+    border-bottom: #E5E5E5 1px solid;
+}
+
+.item:last-of-type {
+}
+
+.users {
+    width: 50%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.buttonsContainer {
+}
+
+.container {
+}
+
+.thead {
+    background-color: #E5E5E5;
+    height: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.nameCol {
+    width: 210px;
+    height: 48px;
+}
+
+.ageCol {
+    width: 210px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
