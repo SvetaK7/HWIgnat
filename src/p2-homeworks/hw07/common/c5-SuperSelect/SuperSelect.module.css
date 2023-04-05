@@ -1,8 +1,15 @@
 .select {
+    width: 180px;
+    height: 25px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 2px;
 }
 
 .select:focus {
+    cursor: pointer;
 }
+
 
 
 .option:hover {
