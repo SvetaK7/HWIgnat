@@ -30,8 +30,16 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date?.toLocaleTimeString();
-    const stringDate = date?.toLocaleDateString();
+    let formatterDate = new Intl.DateTimeFormat("ru");
+    const stringDate = formatterDate.format(date)
+
+    let formatterTime = new Intl.DateTimeFormat("ru", {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: false
+    });
+    const stringTime = formatterTime.format(date)
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
 
