@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import s2 from '../../p1-main/m1-ui/u1-app/App.module.css'
 import s from './HW13.module.css'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import axios from 'axios'
 import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
+import SuperButton from "p2-homeworks/hw04/common/c2-SuperButton/SuperButton";
 
 /*
 * 1 - дописать функцию send
@@ -36,7 +36,6 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                // дописать
                 setText(`...всё ок)
 код 200 - обычно означает что скорее всего всё ок)`)
                 setInfo('')
@@ -61,9 +60,6 @@ const HW13 = () => {
                     setText('Network Error\nAxiosError')
                     setInfo('')
                 }
-
-                // дописать
-
             })
     }
 
@@ -78,8 +74,6 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        // дописать
-
                     >
                         Send true
                     </SuperButton>
@@ -88,8 +82,6 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        // дописать
-
                     >
                         Send false
                     </SuperButton>
@@ -98,8 +90,6 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        // дописать
-
                     >
                         Send undefined
                     </SuperButton>
@@ -108,8 +98,6 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         className={s.sendButton}
-                        // дописать
-
                     >
                         Send null
                     </SuperButton>
