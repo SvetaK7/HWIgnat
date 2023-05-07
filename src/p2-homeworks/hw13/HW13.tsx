@@ -72,7 +72,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        disabled={!!info}
+                        disabled={info ==='...loading'}
                     >
                         Send true
                     </SuperButton>
@@ -81,7 +81,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        disabled={!!info}
+                        disabled={info ==='...loading'}
                     >
                         Send false
                     </SuperButton>
@@ -90,7 +90,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         className={s.sendButton}
-                        disabled={!!info}
+                        disabled={info ==='...loading'}
                     >
                         Send undefined
                     </SuperButton>
@@ -99,7 +99,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         className={s.sendButton}
-                        disabled={!!info}
+                        disabled={info ==='...loading'}
                     >
                         Send null
                     </SuperButton>
