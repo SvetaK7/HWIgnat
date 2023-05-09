@@ -1,0 +1,6 @@
+.icon{
+    display: flex;
+    flex-direction: column;
+    height: 11px;
+    width: 11px;
+}

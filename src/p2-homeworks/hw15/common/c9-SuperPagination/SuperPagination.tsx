@@ -30,14 +30,13 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
-                sx={{
-                    // стили для Pagination // пишет студент
-                }}
                 page={page}
                 count={lastPage}
                 onChange={onChangeCallback}
                 hideNextButton
                 hidePrevButton
+                shape="rounded"
+                color="primary"
             />
 
             <span className={s.text1}>
@@ -56,7 +55,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             />
 
             <span className={s.text2}>
-                строк в таблице
+               {itemsCountForPage === 4 ? 'строки в таблице' : 'строк в таблице'}
             </span>
         </div>
     )

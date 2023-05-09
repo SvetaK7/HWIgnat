@@ -7,19 +7,34 @@
 }
 
 .techHeader {
-    width: 50vw;
+    width: 40vw;
+    display: flex;
+    align-items: center;
 }
 
 .developerHeader {
-
+    display: flex;
+    align-items: center;
 }
 
 .row {
     display: flex;
+    margin: 10px 0;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .rowHeader {
     display: flex;
+    background: #E5E5E5;
+    max-width: 700px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    padding: 10px 0;
+    color: #000000;
 }
 
 .loading {

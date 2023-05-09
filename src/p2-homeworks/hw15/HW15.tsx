@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
+import {LinearProgress} from "@mui/material";
 
 /*
 * 1 - дописать SuperPagination
@@ -23,6 +24,7 @@ type TechType = {
 type ParamsType = {
   page: number
   count: number
+  sort?: string
 }
 const getTechs = (params: any) => {
   return axios
@@ -51,6 +53,7 @@ const HW15 = () => {
         if (res) {
           setTechs(res.data.techs);
           setTotalCount(res.data.totalCount)
+          setLoading(false)
         }
       })
   }
@@ -63,15 +66,10 @@ const HW15 = () => {
   }
 
   const onChangeSort = (newSort: string) => {
-    // делает студент
-
-    // setSort(
-    // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-    // sendQuery(
-    // setSearchParams(
-
-    //
+    setSort(newSort)
+    setPage(1)
+    sendQuery({page: 1, count, sort: newSort})
+    setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
   }
 
   useEffect(() => {
@@ -92,12 +90,11 @@ const HW15 = () => {
       </div>
     </div>
   ))
-
   return (
     <div id={'hw15'}>
       <div className={s2.hwTitle}>Homework #15</div>
-
       <div className={s2.hw}>
+        {idLoading && <LinearProgress/>}
         {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
         <SuperPagination
@@ -109,12 +106,12 @@ const HW15 = () => {
 
         <div className={s.rowHeader}>
           <div className={s.techHeader}>
-            tech
+            Tech
             <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
           </div>
 
           <div className={s.developerHeader}>
-            developer
+            Developer
             <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
           </div>
         </div>
